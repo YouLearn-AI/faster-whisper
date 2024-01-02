@@ -2,8 +2,8 @@ name: Sync to Hugging Face hub
 on:
   push:
     branches: [main]
-
-  # to run this workflow manually from the Actions tab
+    paths-ignore:
+      - 'tests/' #Ignore changes to the tests dir
   workflow_dispatch:
 
 jobs:
