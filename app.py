@@ -55,7 +55,8 @@ iface = gr.Interface(
     ],
     outputs=gr.JSON(label="Transcription with Timestamps"),
     title="Whisper Transcription Service",
-    description="Upload an MP3 audio file to transcribe. Select the model. The output includes the transcription with timestamps."
+    description="Upload an MP3 audio file to transcribe. Select the model. The output includes the transcription with timestamps.",
+    concurrency_limit=2
 )
 
 # Launch the app
